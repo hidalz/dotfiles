@@ -1,0 +1,14 @@
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = vim
+[user]
+	name = hidalz
+	email = 46967257+hidalz@users.noreply.github.com
+[init]
+	defaultBranch = main
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+

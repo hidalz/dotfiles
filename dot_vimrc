@@ -1,0 +1,20 @@
+" Set shift width to 2 spaces
+set shiftwidth=2
+" Set tab width to 2 columns. ts sts sw
+set tabstop=2 softtabstop=2 shiftwidth=2
+" Use space characters instead of tabs. et
+set expandtab
+" Show line numbers.
+set number ruler
+" Extra convenience when navigation deep levels in YAML. Autoindent indents at the same level of the previous line ai si
+set autoindent smartindent
+" Increase readability through syntax highlighting. Syntax on top
+syntax enable
+" Set highlightserach (Highlight search terms)
+set hls
+" Ignorecase when searching in VIM
+set ic
+" Enable type file detection, load plugins and indent for detected type.
+filetype plugin indent on
+
+set cursorcolumn
