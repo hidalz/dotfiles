@@ -56,6 +56,13 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 source <(kubectl completion zsh)
 
 ## OTHERS ##
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+fcd() {
+  local dir
+  dir=$(find ${1:-.} -type d -not -path '*/\.*' 2> /dev/null | fzf +m) && cd "$dir"
+}
+
 # better diff
 diff_with_fancy() {
     if [[ $# -eq 2 ]]; then
