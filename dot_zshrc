@@ -24,7 +24,7 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export GOPATH="$HOME/go"
-export XDG_CONFIG_HOME="~/.config"
+export XDG_CONFIG_HOME="$HOME/.config"
 export BAT_THEME="Dracula"
 
 ## ALIASES ##
