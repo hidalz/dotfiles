@@ -1,6 +1,7 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST # Avoid dump of cache in $HOME
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -24,6 +25,7 @@ export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export GOPATH="$HOME/go"
 export XDG_CONFIG_HOME="~/.config"
+export BAT_THEME="Dracula"
 
 ## ALIASES ##
 if [ -x "$(command -v colorls)" ]; then
