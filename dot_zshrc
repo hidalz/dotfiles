@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 ## USER CONFIG ## (exports)
 export LANG=en_US.UTF-8
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
