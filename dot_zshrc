@@ -26,7 +26,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export GOPATH="$HOME/go"
 export XDG_CONFIG_HOME="$HOME/.config"
 export BAT_THEME="Dracula"
-export sb="cd ~/Development/sandbox/"
 
 ## ALIASES ##
 if [ -x "$(command -v colorls)" ]; then
@@ -34,6 +33,8 @@ if [ -x "$(command -v colorls)" ]; then
     alias la="colorls -al"
 fi
 
+alias sb="cd ~/Development/sandbox/"
+alias dev="cd ~/Development/"
 alias tf='terraform'
 alias tfv='terraform validate'
 alias tfi='terraform init'
