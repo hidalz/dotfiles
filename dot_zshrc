@@ -26,6 +26,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 export GOPATH="$HOME/go"
 export XDG_CONFIG_HOME="$HOME/.config"
 export BAT_THEME="Dracula"
+export VISUAL=nvim # Chezmoi editor choice
 
 ## ALIASES ##
 if [ -x "$(command -v colorls)" ]; then
