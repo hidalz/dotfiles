@@ -34,7 +34,7 @@ if [ -x "$(command -v colorls)" ]; then
     alias la="colorls -al"
 fi
 
-alias sb="cd ~/Development/sandbox/"
+alias lab="cd ~/Development/lab/"
 alias dev="cd ~/Development/"
 alias tf='terraform'
 alias tfv='terraform validate'
@@ -46,7 +46,7 @@ alias k='kubectl'
 alias gcs='gh copilot suggest'
 alias cat='bat --paging=never'
 alias c='chezmoi'
-alias diff='diff_with_fancy'
+alias diff='diff_with_delta'
 alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"' # Add bat as a preview for fzf
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -69,9 +69,9 @@ fcd() {
 }
 
 # better diff
-diff_with_fancy() {
+diff_with_delta() {
     if [[ $# -eq 2 ]]; then
-        diff -u "$1" "$2" | diff-so-fancy
+        delta "$1" "$2"
     else
         command diff "$@"
     fi
