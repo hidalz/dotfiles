@@ -1,31 +1,29 @@
-[core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
-  editor = vim
 [user]
 	name = hidalz
 	email = 46967257+hidalz@users.noreply.github.com
+
 [init]
 	defaultBranch = main
+
 [alias]
     co = checkout
     br = branch
     ci = commit
     st = status
 
+[core]
+      pager = delta
+      editor = nvim
+
 [interactive]
-	diffFilter = diff-so-fancy --patch
-[color]
-	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	func = 146 bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+      diffFilter = delta --color-only
+
+[delta]
+      navigate = true    # use n and N to move between diff sections
+      light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+[merge]
+      conflictstyle = diff3
+
+[diff]
+      colorMoved = default
