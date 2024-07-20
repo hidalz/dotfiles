@@ -1,0 +1,255 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.rulers": [
+    100
+  ],
+  "editor.mouseWheelZoom": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.formatOnType": true,
+    "editor.fontSize": 14
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "git.confirmSync": false,
+  "editor.minimap.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "python": true
+  },
+  // Set the font
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "gitlens.telemetry.enabled": false,
+  "editor.fontWeight": "normal",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.smoothScrolling": true,
+  "window.zoomLevel": 1,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "normal",
+  "workbench.list.smoothScrolling": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredSettings": [],
+  "gitlens.views.branches.branches.layout": "list",
+  "gitlens.graph.layout": "editor",
+  "black-formatter.args": [
+    "--line-length=100"
+  ],
+  "go.toolsManagement.autoUpdate": true,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "github.copilot.advanced": {},
+  "update.showReleaseNotes": false,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "stash-apply:command"
+  ],
+  "diffEditor.renderSideBySide": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 1,
+  "workbench.colorTheme": "Sweet Dracula",
+  "workbench.editor.showTabs": "single",
+  "editor.accessibilitySupport": "off",
+  "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "remote.autoForwardPortsSource": "hybrid",
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  // "yaml.schemas": {
+  //   "Kubernetes": "*.yaml",
+  // }
+  // VIM
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    // NICE TO HAVE
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":x!"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "c",
+        "d",
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "h"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    // toggle comment selection
+    {
+      "before": [
+        "leader",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  "gitlens.ai.experimental.model": "openai:gpt-4o",
+}
