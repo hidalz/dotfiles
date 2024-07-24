@@ -1,8 +1,6 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.mouseWheelZoom": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -13,10 +11,7 @@
     "editor.formatOnType": true,
     "editor.fontSize": 14
   },
-  "isort.args": [
-    "--profile",
-    "black"
-  ],
+  "isort.args": ["--profile", "black"],
   "editor.inlineSuggest.enabled": true,
   "git.confirmSync": false,
   "editor.minimap.enabled": false,
@@ -55,9 +50,7 @@
   "settingsSync.ignoredSettings": [],
   "gitlens.views.branches.branches.layout": "list",
   "gitlens.graph.layout": "editor",
-  "black-formatter.args": [
-    "--line-length=100"
-  ],
+  "black-formatter.args": ["--line-length=100"],
   "go.toolsManagement.autoUpdate": true,
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
@@ -94,162 +87,82 @@
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "leader",
-        "v"
-      ],
-      "commands": [
-        ":vsplit"
-      ]
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
     },
     {
-      "before": [
-        "leader",
-        "s"
-      ],
-      "commands": [
-        ":split"
-      ]
+      "before": ["leader", "s"],
+      "commands": [":split"]
     },
     // NICE TO HAVE
     {
-      "before": [
-        "leader",
-        "w"
-      ],
-      "commands": [
-        ":w!"
-      ]
+      "before": ["leader", "w"],
+      "commands": [":w!"]
     },
     {
-      "before": [
-        "leader",
-        "q"
-      ],
-      "commands": [
-        ":q!"
-      ]
+      "before": ["leader", "q"],
+      "commands": [":q!"]
     },
     {
-      "before": [
-        "leader",
-        "x"
-      ],
-      "commands": [
-        ":x!"
-      ]
+      "before": ["leader", "x"],
+      "commands": [":x!"]
     },
     {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
     },
     {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
     },
     {
-      "before": [
-        "leader",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": [
-        "leader",
-        "c",
-        "d",
-      ],
-      "commands": [
-        "editor.action.showHover"
-      ]
+      "before": ["leader", "c", "d"],
+      "commands": ["editor.action.showHover"]
     },
     {
-      "before": [
-        "leader",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "leader",
-        "p"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "g",
-        "h"
-      ],
-      "commands": [
-        "editor.action.showDefinitionPreviewHover"
-      ]
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     },
     // Move selected lines while staying in visual mode
     {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
     },
     // toggle comment selection
     {
-      "before": [
-        "leader",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
     }
   ],
   "gitlens.ai.experimental.model": "openai:gpt-4o",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
