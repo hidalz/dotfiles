@@ -211,4 +211,10 @@
         "command": "search.action.replaceAll",
         "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
     },
+    // GIT
+    {
+    "key": "cmd+k cmd+s",
+    "command": "git.stageSelectedRanges",
+    "when": "editorTextFocus"
+    }
 ]
