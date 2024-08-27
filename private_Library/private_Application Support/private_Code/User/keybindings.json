@@ -24,6 +24,10 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
     // UI sections
     {
         "key": "cmd+h",
