@@ -23,10 +23,17 @@
         "key": "cmd+w",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
-    },
+    },// Scroll terminal up
     {
-        "key": "cmd+m",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "key": "shift+k",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    // Scroll terminal down
+    {
+        "key": "shift+j",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
     },
     // UI sections
     {
