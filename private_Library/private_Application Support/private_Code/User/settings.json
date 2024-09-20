@@ -4,6 +4,9 @@
   "editor.wordWrap": "off",
   "editor.mouseWheelZoom": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
