@@ -7,6 +7,9 @@
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
@@ -169,13 +172,24 @@
     }
   ],
   "gitlens.ai.experimental.model": "openai:gpt-4o",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
+
+  "launch": {
+    "configurations": [
+      {
+        "name": "Launch Current File",
+        "type": "go",
+        "request": "launch",
+        "mode": "auto",
+        "program": "${file}"
+      },
+      {
+        "name": "Launch Current Python File",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}"
+      }
+    ],
+
+    "compounds": []
   }
 }
